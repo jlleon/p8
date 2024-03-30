@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+layout:decorate="~{layouts/general}">
+<head>
+    <title>Detalle Producto</title>
+</head>
+<body>
+    <div layout:fragment="content">
+        <h2>Detalle del Producto</h2>
+        <p>ID: <span th:text="${producto.id}"></span></p>
+        <p>Nombre: <span th:text="${producto.nombre}"></span></p>
+        <p>Precio: <span th:text="${producto.precio}"></span></p>
+    </div>
+</body>
+</html>
